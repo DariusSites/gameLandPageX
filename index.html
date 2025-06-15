@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="action.js"></script>
+</head>
+<body>
+   <!-----------MOBILE  -NAVIGATION----------->
+         <nav id="mobileNAV" class="navbar  fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" id="mobileTitle">Level Dev</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header" >
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body" id="mobileSide-nav">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a id="sideNav-links" class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a id="sideNav-links" class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a id="sideNav-links" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a id="sideNav-links" class="dropdown-item" href="#">Action</a></li>
+              <li><a   id="sideNav-links" class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button class="srchBTN">SEARCH</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+         <!-------------DESKTOP NAVIGATION----------->
+          <header class="p-3" id="deskNAV">
+            <div class="container"> 
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <div class="logo-cont">
+                  <i id="logoIcon" class="fa-solid fa-puzzle-piece"></i>
+                </div>
+             <ul id="desknavTXT" class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"> 
+            <li><a href="#" class="nav-link px-2">Home</a></li> 
+            <li><a href="#" class="nav-link px-2 ">Features</a></li>
+            <li><a href="#" class="nav-link px-2 ">Pricing</a></li>
+             <li><a href="#" class="nav-link px-2 ">FAQs</a></li>
+              <li><a href="#" class="nav-link px-2 ">About</a></li> </ul> 
+              <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                 <button class="headBTN">Download</button>
+               </div> </div> </header>
+    <main>
+         <!-------------SECTION CONTENT----------->
+        <section>
+          <div class="heroTitle-cont">
+              <h1 id="title">Level Up Your Ideas."</h1>
+            </div>
+
+            <div class="heroVid-cont">
+              <iframe class="vid"  src="https://www.youtube.com/embed/jse1Jvms28I" title="ITORAH - First 5 Minutes Gameplay | No Commentary" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="heroDesc-cont">
+                <p id="heroDESC">"Game development is the art of turning ideas into playable experiences through design, coding, and creativity."</p>
+            </div>
+        </section>
+        <!------------ hero sect IMG----------->
+        <article>
+            <aside>
+              <img id="bgIMG" src="img/heroIMG.png" alt="">
+               <div class="archDesc-cont">
+                <h3>Game Dev Archetypes</h3>
+                <ul>
+                  <li>Knight:The Systems Architect / Backend Engineer</li>
+                   <li> Mage:The Game Designer / Creative Director</li>
+                    <li>The Rogue: The Solo Indie Dev / Prototyper</li>
+                     <li>The Ranger: The Front-End / Visual Develope</li>
+                </ul>
+               </div>
+                    <figure>2</figure>
+               <div class="heroBTN-cont">
+              <button class="sa_pu-BTN">Try Online!</button>
+              <button class="sa_pu-BTN">Download Now!</button>
+               </div>
+            </aside>
+        </article>   
+    </main>
+       <!--------------------FOOTER--------------------->  
+     <footer>
+        <p class="ftTXT">"© 2025 Darius Arrington | @DariusSites | All Rights Reserved"</p>
+    </footer>  
+</body>
