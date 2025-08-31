@@ -7,7 +7,6 @@
 body{
     display: flex;
     flex-direction: column;
-    border: solid 2px green;
      background-color: #09051E;
 }
 @font-face{
@@ -427,4 +426,5 @@ footer{
     font-size: clamp(0.8rem,1vw,1rem);
     margin-left: 20px;
 }
+
 
